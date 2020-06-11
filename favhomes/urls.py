@@ -25,4 +25,4 @@ urlpatterns = [
     path('', PostList.as_view(), name='list'),
     path('new/', PostCreate.as_view(), name='new'), 
     path('posts/<pk>/', PostDetail.as_view(), name='detail'),
-] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
